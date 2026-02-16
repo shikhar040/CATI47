@@ -1,0 +1,52 @@
+.projects {
+  text-align: center;
+}
+
+.list .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px; /* You can adjust the spacing between items */
+}
+
+.item .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Space between the image and content */
+}
+
+.item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+}
+
+.content {
+  text-align: center;
+}
+
+.see-more-btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background: #141414;
+  border: 2px solid #00f0ff;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff;
+}
+
+.see-more-btn:hover {
+  color: #141414;
+  background: #00f0ff;
+  box-shadow: 0 0 10px #00f0ff, 0 0 30px #00f0ff, 0 0 50px #00f0ff, 0 0 80px #00f0ff;
+  border-color: #00f0ff;
+}

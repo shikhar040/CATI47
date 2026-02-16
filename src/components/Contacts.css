@@ -1,0 +1,113 @@
+.contacts {
+  text-align: center;
+  padding: 30px 0;
+  margin: 0;
+}
+
+.contacts .title {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #FFFFFF; /* Change text color to white */
+}
+
+.contacts .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts .insta, 
+.contacts .face, 
+.contacts .twit, 
+.contacts .yt, 
+.contacts .spo {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.contacts .insta a,
+.contacts .face a,
+.contacts .twit a,
+.contacts .yt a,
+.contacts .spo a {
+  color: #FFFFFF; /* Icon color white */
+  transition: color 0.3s;
+}
+
+.contacts .insta::before,
+.contacts .face::before,
+.contacts .twit::before,
+.contacts .yt::before,
+.contacts .spo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(100%, 100%);
+  transition: all .4s;
+}
+
+.contacts .insta:hover::before,
+.contacts .face:hover::before,
+.contacts .twit:hover::before,
+.contacts .yt:hover::before,
+.contacts .spo:hover::before {
+  transform: translate(0);
+  animation: anim .4s linear;
+}
+
+.contacts .insta::before {
+  background: linear-gradient(to bottom left, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+}
+
+.contacts .face::before {
+  background: #4267B2;
+}
+
+.contacts .twit::before {
+  background: #1DA1F2;
+}
+
+.contacts .yt::before {
+  background: #FF0000;
+}
+
+.contacts .spo::before {
+  background: #0c67d7;
+}
+
+@keyframes anim {
+  0%, 100% {
+      width: 100%;
+      height: 100%;
+  }
+  50% {
+      width: 50%;
+      height: 50%;
+  }
+}
+
+.contacts .footer {
+  margin-top: 40px; /* Increase margin above the logo */
+}
+
+.contacts .copyright {
+  font-size: 14px;
+  margin-bottom: 10px; /* Decrease margin below copyright */
+}
+
+.contacts .copyright i {
+  color: #FF0000;
+}
